@@ -28,6 +28,8 @@
 
 <div class="line"></div>
 <h3>Original and potentially useful projects:</h3>
+
+
 <article id="anki-addons"> 
     <figure class="abstract">
       <img src="/images/Julia_and_her_sister.jpg"
@@ -65,6 +67,33 @@
     At the moment, this looks up pinyin to hanzi entered and applies
     styling so that the Chinese text can be shown with tone color. I’m
     waiting for somebody to take over development.
+  </div>
+</article>
+
+<h3>Small or tiny projects:</h3>
+
+<article id="reusessh"> 
+  <h2><a href="https://github.com/ospalh/reuse-ssh-agent/">reuse-ssh-agent</a></h2>
+  <h4>Use an existing ssh-agent when there is one or start a new one.</h4>
+  <div class="line"></div>
+  <div class="articleBody clear">
+    This is my take on the idea described by
+    <a href="http://www.electricmonk.nl/log/2012/04/24/re-use-existing-ssh-agent-cygwin-et-al/">elertric
+    monk</a>:
+
+    Use an existing ssh-agent when there is one or start a new one.
+
+    <h3>Setup:</h3>
+    <ul>
+      <li>Get the <a href="https://github.com/ospalh/reuse-ssh-agent/blob/master/reuse-ssh-agent">file</a>
+      <li>Change “<tt>&lt;user name></tt>” to your user name.
+      <li><tt>mkdir ~/.ssh/agent</tt>
+      <li><tt>chmod 700 ~/.ssh/agent</tt>
+      <li>Just keep the file and source it when you feel like it
+      <li>Or insert it into your <tt>.tchrc</tt>. I had problems with
+      this on Linux, but it worked all right on cygwin.
+      <li>Then just <tt>ssh-add</tt> your keys once per boot.
+    </ul>
   </div>
 </article>
 
@@ -151,15 +180,6 @@
   </div>
 </article>
 
-<div class="line"></div>
-
-    <footer>
-      <div class="line"></div>
-      <span class="by">By <a href="https://github.com/ospalh"><a href="https://github.com/ospalh">ospalh</a>
-       <a href="http://tutorialzine.com/" class="tmpl">Original template: Tutorialzine</a>
-    </footer>
-  </section>
-
 <article id="kanjivg"> 
   <h2><a href="https://github.com/ospalh/kanjivg">kanjivg</a></h2>
   <h4>Kanji description and vectorial data in correct stroke order </h4>
@@ -172,6 +192,44 @@
 </article>
 
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<article id="csod"> 
+  <h2><a href="https://github.com/ospalh/kanji-colorize">kanji-colorize</a></h2>
+  <h4>A script to turn KanjiVG data into colored stroke order diagrams</h4>
+  <div class="line"></div>
+  <div class="articleBody clear">
+    Fork of 
+    <a href="https://github.com/cayennes/">cayennes</a>’
+    <a href="https://github.com/cayennes/kanji-colorize">kanji-colorize</a>.
+    This is a rather early fork. I added command line arguments
+    independantely from cayennes. I also added a way to use hardcoded
+    colors because i didn’t like either of the original color schemes.
+  </div>
+</article>
+
+<article id="cjklib"> 
+  <h2><a href="https://github.com/ospalh/cjklib">cjklib</a></h2>
+  <h4>A Git clone of the cjklib repository at http://cjklib.googlecode.com/svn/trunk/</h4>
+  <div class="line"></div>
+  <div class="articleBody clear">
+    Fork of 
+    <a href="https://github.com/batterseapower/">batterseapower</a>’s
+    <a href="https://github.com/batterseapower/cjklib">cjklib</a>. This fixes an
+    issue that kept the old <a href="#pinyin-tk">pinyin toolkit</a>
+    from working on newer Linux systems.
+  </div>
+</article>
+
+
+<div class="line"></div>
+
+    <footer>
+      <div class="line"></div>
+      <span class="by">By <a href="https://github.com/ospalh"><a href="https://github.com/ospalh">ospalh</a>
+       <a href="http://tutorialzine.com/" class="tmpl">Original template: Tutorialzine</a>
+    </footer>
+  </section>
+
+
+
 </body>
 </html>
