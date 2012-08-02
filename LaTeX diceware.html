@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ospalh’s github repositories</title>
+
+        <link rel="stylesheet/less" type="text/css" href="/css/styles.less">
+        <script src="/scripts/less-1.3.0.min.js" type="text/javascript"></script>
+	<!-- Internet Explorer HTML5 enabling script: -->
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<style type="text/css">.clear {zoom: 1;display: block;}</style>
+	<![endif]-->
+</head>
+<body>
+  <section id="page">
+    <header> 
+
+      <nav class="clear">
+	<ul>
+	  <li><a href="/">Home</a></li>
+          <li><a href="https://github.com/ospalh/latex-diceware"
+                 class="code">GitHub project</a></li>
+          <li><a href="https://github.com/ospalh/latex-diceware/tarball/master"><span>Project tarball</span></a></li>
+          <li><a href="https://github.com/ospalh/latex-diceware/zipball/master"
+                 class="download-button zip"><span>Project
+                 zipball</span></a></li>
+          
+	</ul>
+      </nav>
+
+      <h1>latex-diceware</h1>
+      <h3>Wordlists and some other files for my nicely formated diceware lists.</h3>
+    </header>
+
+        
+<article id="sox"> 
+	<div class="articleBody clear">
+
+		<figure>
+		  <img src="/images/dice.png"
+		       alt="words for throws starting with 2, 5, 3" />
+		</figure>
+
+
+<p>As is often the case for hackers, there is
+  an <a href="http://xkcd.com/936/">XKCD comic</a> that explains the
+  problem. A good passphrase consists of a number of randomly chosen,
+  common words.
+<p>What the comic does not explain is how to truly randomly select the
+  words. The answer to that
+  is <a href="http://world.std.com/~reinhold/diceware.html">diceware</a>. It
+  is rather simple, you throw five dice and look up words in a
+  list.
+<p>The diceware website does provide these lists of words, but i
+  didn’t really like them. There were two problems with the list:
+<ul>
+  <li>The formating was basically nonexistant,
+  <li>and there were lots of non-alphabet characters.
+</ul>
+The problem i had with the non-alphabetic characters is that i have to
+switch between systems with dvorak keyboard layout and programmer
+dvorak layout. That makes finding any key but the letters quite
+tricky.
+<p>The solution was obvious: when the old lists aren’t good, i needed
+  to make new ones.
+<h2>The lists</h2>
+There are four lists ready to download, the names pretty much tell
+what is what:
+<ul>
+  <li><a href="https://github.com/ospalh/latex-diceware/blob/master/Deutsche%20Wortliste%20f%C3%BCr%20Diceware%2C%20f%C3%BCr%20W20.pdf">Deutsche Wortliste für Diceware, für W20.pdf</a>
+  <li><a href="https://github.com/ospalh/latex-diceware/blob/master/Deutsche%20Wortliste%20f%C3%BCr%20Diceware%2C%20f%C3%BCr%20W6.pdf">Deutsche
+  Wortliste für Diceware, für W6.pdf</a>
+  <li><a href="https://github.com/ospalh/latex-diceware/blob/master/Diceware%20English%20word%20list%20for%20use%20with%20d20.pdf">Diceware English word list for use with d20.pdf</a>
+  <li><a href="https://github.com/ospalh/latex-diceware/blob/master/Diceware%20English%20word%20list%20for%20use%20with%20d6.pdf">Diceware English word list for use with d6.pdf</a>
+    </ul>
+
+<h2>Word origin and selection</h2> As the base for the words i
+used <a href="http://dict.tu-chemnitz.de/">BEOlingus</a> online
+dictionary. They have a word
+list <a href="http://dict.tu-chemnitz.de/doc/faq.en.html">free to
+download</a>, under the <a href="http://www.gnu.org/licenses/gpl-2.0.html">GPL v2</a>.
+<p>I then munged that list in a number of ways until i had two lists,
+  one <a href="https://github.com/ospalh/latex-diceware/blob/master/Engilsh%20word%20list.txt">English</a>
+  one <a href="https://github.com/ospalh/latex-diceware/blob/master/Deutsche%20Wortliste.txt">German</a>,
+  of short words consisting entirely of the lower-case letters a to
+  z. From those i randomly picked 7776 words for the classical five 6-sided
+  dice word selection and 8000 words for the three 20-sided dice word
+  selection.
+<p>This last selection means that there are some strange words in the
+  list. Maybe i’ll pick words by hand at some later date.
+
+<h2>On rolling dice</h2> One point i’d like to reiterate is the
+ordering of dice when you roll the five dice for a single word
+together. The diceware web-site does mention that “(i)f you do roll
+several dice at a time, read the dice from left to right.” You need
+strict rules how to order the dice. When you just decide the order of
+the dice on the spur of the moment, an import degree of randomness is lost.
+<p>The procedure i use with six-dided dice is
+<ul>
+  <li>Always use a throwing cup
+  <li>Shake it well for each throw
+  <li>Throw the dice so there is room to move them away from you.
+  <li>Dice stacked on top of others are counted first. Place them on
+  the side, keeping the thrown value.
+  <li>Then take a pen and push the dice away from you untill they are
+  arranged in neat rows.
+  <li><em>Now</em> read them by rows, then by columns, from top to
+  bottom, from left to right.
+  <li>If in doubt if it should “count”, throw again
+</ul>
+
+<p>The exact rules aren’t important. What is important is that there are
+rules to decide the order.
+<p>Another way to decide is to use five distinct dice, (one red, one
+  white, one green, one big one small, ...), and have a strict order
+  based on the dice themselves.
+<p>For 20-sided dice, that typically come in a variey of colors, this
+  method is more common. (Also, the method of pushing the dice untill
+  they are in a row is harder to do as the D20 tend to roll rather
+  then slide.) I personally have a blue, a white and a green D20 and
+  use them in that order.
+
+
+
+
+	</div>
+
+</article>
+
+
+
+    <footer>
+      <div class="line"></div>
+      <span class="by"><a href="https://github.com/ospalh"><a href="https://github.com/ospalh">ospalh</a>
+      maintains <a href="https://github.com/ospalh/latex-diceware">latex-diceware</a></span>
+
+      <a href="http://tutorialzine.com/" class="tmpl">Original template: Tutorialzine</a>
+    </footer>
+  </section>
+
+</body>
+</html>
