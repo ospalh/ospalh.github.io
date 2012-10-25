@@ -118,18 +118,30 @@
 
 <article id="age">
   <h2><a href="https://github.com/ospalh/age/">age</a></h2>
-  <h4>Ridiculously simple python script that prints the age of a file.</h4>
+  <h4>Simple python script that print the ages of files.</h4>
   <div class="line"></div>
   <div class="articleBody clear">
-    It is ridiculous because i couldn’t find any other utility that
-    does this without any fanfare.
+    Two little python scripts, that print the ages of files in seconds
+    (<tt>age</tt>) or days (<tt>days</tt>).
+
     <h3>Usage</h3>
     <ul>
       <li>Copy to <tt>~/bin</tt> or somewere else in your path
       <li>Make sure it’s executable
-      <li>Say <tt>age &lt;file></tt> for any file you want to know
-      when it has been modified.
+      <li>Say <tt>age &lt;file></tt> or <tt>days &lt;file></tt> or for
+      any file you want to know when it has been modified.
     </ul>
+
+    The scripts also work when you pass several files to them
+    (<tt>days *</tt>).
+    <p> The <tt>age</tt> script prints just
+    seconds. The numbers quite soon get rather large, and it becomes
+    hard to parse the output for files more than a few ten thousand
+    seconds old.
+    <p><tt>days</tt> prints the age with great precision. It does not
+    use hours, minutes and seconds as subunit of the day, but uses
+    decimal fractions. These are separated with apostrophs to increase
+    readability. For long time spans the age is shown in years, too.
   </div>
 </article>
 
